@@ -2,7 +2,22 @@
 
 **Clinical Decision Support Intelligence Platform**
 
+> **Live demo:** [meridian-clinical.vercel.app](https://meridian-clinical.vercel.app)
+
+---
+
 A demonstration application for AI-assisted clinical decision support, built for healthcare and institutional audiences. MedAI Extract presents five validated clinical decision modules applied to a synthetic inpatient population, designed to illustrate how structured AI reasoning can augment clinical workflows in NHS-grade and academic medical centre environments.
+
+---
+
+## What's in the app
+
+- **5 synthetic patients** across different clinical scenarios, each with a full inpatient progress note, vitals, medications, and clinical findings
+- **5 validated decision modules per patient** — ACAH eligibility, LACE+ 30-day readmission risk, NEWS2 acuity level, qSOFA sepsis alert, and ACS NSQIP surgical candidacy
+- **TRL 7 sliding panel** — for every module, a full evidence panel with validation steps, data requirements, integration architecture, and published references
+- **AI explanation modal** — clinical reasoning behind each recommendation, with criteria breakdown and evidence base
+- **Analytics dashboard** — population-level decision status distribution, patient matrix, and summary statistics
+- **Institutional design** — Libre Baskerville headings, DM Sans body, navy and amber colour system; no gradients, no emoji
 
 ---
 
@@ -122,7 +137,9 @@ src/
 
 ## Deployment
 
-The application is deployed via Vercel with automatic deploys on push to `main`.
+The application is deployed via Vercel at **https://meridian-clinical.vercel.app**
+
+Automatic deploys on every push to `main`.
 
 ---
 

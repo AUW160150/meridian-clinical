@@ -92,12 +92,17 @@ export function PatientList({ patients, selectedId, onSelect }: PatientListProps
               }}
               onMouseEnter={(e) => {
                 if (!isSelected) {
-                  e.currentTarget.style.backgroundColor = 'hsl(220, 18%, 97%)';
+                  e.currentTarget.style.backgroundColor = 'hsl(220, 30%, 93%)';
+                  e.currentTarget.style.borderLeftWidth = '3px';
+                  e.currentTarget.style.borderLeftColor = 'hsl(220, 30%, 72%)';
+                  e.currentTarget.style.paddingLeft = '9px';
                 }
               }}
               onMouseLeave={(e) => {
                 if (!isSelected) {
                   e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.style.borderLeftWidth = '0';
+                  e.currentTarget.style.paddingLeft = '12px';
                 }
               }}
             >

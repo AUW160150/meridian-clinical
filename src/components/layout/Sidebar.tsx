@@ -37,12 +37,14 @@ export function Sidebar({ activeView, onViewChange }: SidebarProps) {
               }}
               onMouseEnter={(e) => {
                 if (!isActive) {
-                  e.currentTarget.style.backgroundColor = 'hsl(220, 40%, 18%)';
+                  e.currentTarget.style.backgroundColor = 'hsl(220, 40%, 22%)';
+                  e.currentTarget.querySelector('span')?.setAttribute('style', 'color: hsl(38, 28%, 92%)');
                 }
               }}
               onMouseLeave={(e) => {
                 if (!isActive) {
                   e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.querySelector('span')?.setAttribute('style', 'color: hsl(38, 28%, 72%)');
                 }
               }}
             >

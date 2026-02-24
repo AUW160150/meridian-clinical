@@ -164,12 +164,14 @@ export function PatientDetail({ patient }: PatientDetailProps) {
                         boxShadow: '0 1px 0 0 hsl(38 30% 80%), 0 2px 8px -2px hsl(220 25% 12% / 0.06)',
                       }}
                       onMouseEnter={(e) => {
-                        e.currentTarget.style.boxShadow = '0 1px 0 0 hsl(38 30% 80%), 0 4px 12px -2px hsl(220 25% 12% / 0.10)';
-                        e.currentTarget.style.transform = 'translateY(-1px)';
+                        e.currentTarget.style.boxShadow = '0 1px 0 0 hsl(38 30% 80%), 0 8px 20px -4px hsl(220 25% 12% / 0.16)';
+                        e.currentTarget.style.transform = 'translateY(-2px)';
+                        e.currentTarget.style.backgroundColor = 'hsl(38, 30%, 99%)';
                       }}
                       onMouseLeave={(e) => {
                         e.currentTarget.style.boxShadow = '0 1px 0 0 hsl(38 30% 80%), 0 2px 8px -2px hsl(220 25% 12% / 0.06)';
                         e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.backgroundColor = 'white';
                       }}
                     >
                       <p className="section-label mb-1">{label}</p>
@@ -203,7 +205,7 @@ export function PatientDetail({ patient }: PatientDetailProps) {
                     key={i}
                     className="flex items-center justify-between px-4 py-2.5 transition-colors duration-100"
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = 'hsl(38, 18%, 98%)';
+                      e.currentTarget.style.backgroundColor = 'hsl(220, 25%, 95%)';
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.backgroundColor = 'transparent';
@@ -237,7 +239,7 @@ export function PatientDetail({ patient }: PatientDetailProps) {
                     key={i}
                     className="flex items-start justify-between px-4 py-3 gap-4 transition-colors duration-100"
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = 'hsl(38, 18%, 98%)';
+                      e.currentTarget.style.backgroundColor = 'hsl(220, 25%, 95%)';
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.backgroundColor = 'transparent';

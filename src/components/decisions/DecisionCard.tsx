@@ -28,7 +28,7 @@ const scoreRingColor: Record<string, string> = {
 };
 
 const CARD_SHADOW = '0 1px 0 0 hsl(38 30% 80%), 0 2px 8px -2px hsl(220 25% 12% / 0.06)';
-const CARD_SHADOW_HOVER = '0 1px 0 0 hsl(38 30% 80%), 0 6px 16px -2px hsl(220 25% 12% / 0.12)';
+const CARD_SHADOW_HOVER = '0 1px 0 0 hsl(38 30% 80%), 0 10px 28px -4px hsl(220 25% 12% / 0.18), 0 4px 10px -2px hsl(220 25% 12% / 0.10)';
 
 export function DecisionCard({ decision, definition, fullWidth = false, onTRL7Click }: DecisionCardProps) {
   const [aiModalOpen, setAiModalOpen] = useState(false);
@@ -43,7 +43,7 @@ export function DecisionCard({ decision, definition, fullWidth = false, onTRL7Cl
         style={{ borderLeft: `3px solid ${borderColor}`, boxShadow: CARD_SHADOW }}
         onMouseEnter={(e) => {
           e.currentTarget.style.boxShadow = CARD_SHADOW_HOVER;
-          e.currentTarget.style.transform = 'translateY(-1px)';
+          e.currentTarget.style.transform = 'translateY(-3px)';
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.boxShadow = CARD_SHADOW;

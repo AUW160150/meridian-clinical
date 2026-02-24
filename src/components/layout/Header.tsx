@@ -3,7 +3,7 @@ export function Header() {
     <header className="h-14 bg-white border-b border-border flex items-center px-6 shrink-0 relative">
       <div className="flex items-center gap-3">
         <h1 className="font-display font-bold text-xl text-foreground tracking-tight leading-none">
-          MedAI Extract
+          AI-Driven Clinical Decision Making
         </h1>
       </div>
 

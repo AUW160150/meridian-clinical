@@ -97,19 +97,6 @@ export default function TRL7Panel({ decisionType, onClose }: TRL7PanelProps) {
           {def.label}
         </h2>
 
-        {/* TRL7 definition */}
-        <p style={{
-          fontStyle: 'italic',
-          fontSize: '12px',
-          color: 'hsl(38, 20%, 62%)',
-          borderLeft: '2px solid hsl(36, 62%, 46%)',
-          paddingLeft: '12px',
-          marginBottom: '28px',
-          lineHeight: 1.6,
-        }}>
-          System prototype demonstrated in an operational environment. The technology has been validated under clinically realistic conditions with sufficient evidence for institutional deployment consideration.
-        </p>
-
         <Divider />
 
         {/* Framework */}

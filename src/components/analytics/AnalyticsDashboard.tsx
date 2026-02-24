@@ -6,7 +6,6 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  Cell,
 } from 'recharts';
 import { Users, AlertCircle, TrendingUp, Activity, Stethoscope } from 'lucide-react';
 import { type PatientRecord, type DecisionStatus } from '../../data/syntheticPatients';
@@ -223,7 +222,7 @@ export function AnalyticsDashboard({ patients }: AnalyticsDashboardProps) {
               </tr>
             </thead>
             <tbody>
-              {patients.map((patient, rowIdx) => (
+              {patients.map((patient) => (
                 <tr
                   key={patient.id}
                   className="border-b border-border last:border-0 hover:bg-[hsl(38,18%,98%)] transition-colors duration-100"
